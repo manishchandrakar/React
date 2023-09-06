@@ -1,0 +1,152 @@
+/* Header.module.css */
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbarContainer {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hamburgerIcon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Hide by default for desktop views */
+}
+
+.navMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navMenu ul {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.navMenu li {
+  margin: 10px;
+}
+
+.navMenu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+.navMenu a:hover {
+  background-color: #555;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.searchButton {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
+}
+.navMenu {
+  display: none;
+}
+
+.authLink {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.activeLink {
+  background-color: greenyellow; /* Change the background color for the active link */
+  font-weight: bold; /* Add bold font for the active link */
+}
+/* Hamburger icon for mobile views */
+@media (max-width: 768px) {
+  .hamburgerIcon {
+    display: block; /* Show hamburger icon for mobile views */
+  }
+
+  .navMenu {
+    /* display: none; Hide navigation menu by default for mobile views */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    z-index: -1;
+  }
+
+  .navMenu.showMenu {
+    display: block; /* Show navigation menu when the showMenu state is true */
+  }
+
+  .navMenu.showMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navMenu.showMenu li {
+    margin: 10px 0;
+  }
+}
+
+/* Other styles for desktop view */
+@media (min-width: 769px) {
+  .navMenu {
+    display: flex;
+    align-items: center;
+  }
+
+  .navItem {
+    margin: 0 15px;
+  }
+}
