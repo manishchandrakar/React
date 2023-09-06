@@ -64,5 +64,7 @@ This project is licensed under the ISC License.
 If you have any questions or need further information, please contact Manish Chandrakar.
 
 Email : manishchandrakar2001@gmail.com
+Link : https://64f82b8e47d1534ac29c12f3--subtle-horse-47dd6e.netlify.app/contact
+
 
 
